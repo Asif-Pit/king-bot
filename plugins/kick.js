@@ -12,8 +12,8 @@ handler.tags = ['admin']
 handler.command = /^(remove|\-)$/i
 
 handler.group = true
-handler.botAdmin = true
-
+handler.botAdmin = false
+handler.admin = true
 handler.limit = true
 
 module.exports = handler
