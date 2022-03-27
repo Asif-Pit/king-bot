@@ -34,7 +34,7 @@ let tags = {
 const defaultMenu = {
   before: `
 
-Makuruwani %name, how can i help you?
+Hey I'm 𝗛𝗲𝗮𝗿𝘁 𝗛𝗮𝗰𝗸𝗲𝗿❤️ %name, how can i help you?
 
  🎀𝐋𝐈𝐌𝐈𝐓: *%limit Limit*
  🎀𝐑𝐎𝐋𝐄: *%role*
@@ -43,13 +43,13 @@ Makuruwani %name, how can i help you?
 
  💎𝐏𝐑𝐄𝐅𝐈𝐗: *%p*
  💎𝐃𝐀𝐓𝐄: *%week, %date*
- 💎𝐆𝐈𝐓𝐇𝐔𝐁: github.com/zim-bot/king-bot
+ 💎𝐅𝐑𝐈𝐄𝐍𝐃𝐒: 𝐃𝐄𝐍𝐕𝐈𝐍💙•𝐓𝐑𝐄𝐌😹•𝐀𝐃𝐎𝐍𝐈𝐒💗• 😈 𝐃𝐀𝐍𝐆𝐄𝐑𝐎𝐔𝐒 𝐆𝐀𝐍𝐆😈
 
  𝙕𝙄𝙈 𝘽𝙊𝙏 𝘼𝙏 𝙔𝙊𝙐𝙍 𝘼𝙎𝙎𝙄𝙎𝙏𝘼𝙉𝘾𝙀😜
 
 %readmore`.trimStart(),
   header: '        *🎀%category🎀*',
-  body: '🇿🇼🍇 %cmd %islimit %isPremium',
+  body: '☃️ %cmd %islimit %isPremium',
   footer: ' ',
   after: `*©king-bot by Drips Memes all rights reserved®* 
 `,
@@ -150,7 +150,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    conn.send2ButtonImg(m.chat, thumb, `🍇 I\'m ${conn.user.name}`, text.trim(), 'owner', '-owner', 'rules', '.rules', m)
+    conn.send2ButtonImg(m.chat, thumb, `☃️ I\'m ${conn.user.name}`, text.trim(), 'owner', '-owner', 'rules', '.rules', m)
   } catch (e) {
     conn.reply(m.chat, 'Sorry, the menu is in error', m)
     throw e
